@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Amarnath Prajapati - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
     <header>
         <div class="container">
             <img src="profile.jpg" alt="Amarnath Prajapati" class="profile-pic" />
             <h1>Amarnath Prajapati</h1>
             <p class="tagline">We do our work with mind and heart.</p>
+            <p class="typewriter-text">I build stunning websites that work beautifully.</p>
             <a href="#" class="btn" id="hireBtn">Hire Me on Fiverr</a>
         </div>
     </header>
 
+    <section class="highlight container">
+        <blockquote>"Code is like humor. When you have to explain it, it’s bad."</blockquote>
+        <div class="skills-icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" title="HTML">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" title="CSS">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS" title="JavaScript">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" title="GitHub">
+        </div>
+        <p class="animated-skill">💻 Building Ideas Into Reality...</p>
+    </section>
+
     <section id="about" class="container">
         <h2>About Me</h2>
-        <p>I am a passionate web developer and ethical hacking enthusiast, continuously learning and growing to deliver
-            the best quality work.</p>
+        <p>I am a passionate web developer and ethical hacking enthusiast, continuously learning and growing to deliver the best quality work.</p>
     </section>
 
     <section id="services" class="container">
@@ -47,6 +56,28 @@
         </div>
     </section>
 
+    <section class="testimonials container">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial">
+            <p>"Great work! Very professional and fast delivery."</p>
+            <span>- Sarah (Startup Founder)</span>
+        </div>
+        <div class="testimonial">
+            <p>"My website looks amazing now, thank you Amarnath!"</p>
+            <span>- John (Entrepreneur)</span>
+        </div>
+    </section>
+
+    <section class="contact container">
+        <h2>Contact Me</h2>
+        <form action="mailto:amarnath@example.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
     <footer>
         <div class="container">
             <p>Contact me at: <a href="mailto:amarnath@example.com">amarnath@example.com</a></p>
@@ -55,5 +86,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
