@@ -2,89 +2,479 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Amarnath Prajapati - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Amarnath Prajapati - BCA Student | Java & Spring Boot Developer | Web Developer Portfolio" />
+    <meta name="keywords" content="web developer, Java developer, Spring Boot, React, portfolio, Gorakhpur" />
+    <meta name="author" content="Amarnath Prajapati" />
+    <meta name="theme-color" content="#0f2027" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Amarnath Prajapati - Software Developer Portfolio" />
+    <meta property="og:description" content="BCA Final Year Student | Java, Spring Boot, React Developer from Gorakhpur" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amar-nath-dev.github.io/portfolio/" />
+    
+    <title>Amarnath Prajapati | Java & Web Developer</title>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="profile.jpg" alt="Amarnath Prajapati" class="profile-pic" />
-            <h1>Amarnath Prajapati</h1>
-            <p class="tagline">We do our work with mind and heart.</p>
-            <p class="typewriter-text">I build stunning websites that work beautifully.</p>
-            <a href="#" class="btn" id="hireBtn">Hire Me on Fiverr</a>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">&lt;AP /&gt;</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="container header-container">
+            <div class="header-content">
+                <div class="profile-wrapper">
+                    <img src="a.jpg" alt="Amarnath Prajapati" class="a-pic" loading="lazy" />
+                    <div class="status-dot" title="Available for Work"></div>
+                </div>
+                <h1 class="gradient-text">Amarnath Prajapati</h1>
+                <p class="tagline">Java Developer • Web Developer • BCA Student</p>
+                <p class="typewriter-text" id="typewriter">Building robust applications with Java & Spring Boot</p>
+                <div class="header-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Gorakhpur, UP</span>
+                    <span><i class="fas fa-phone"></i> 6387765027</span>
+                </div>
+                <div class="header-buttons">
+                    <a href="https://www.fiverr.com/webexpert_aman" target="_blank" class="btn btn-primary" id="hireBtn">
+                        <i class="fas fa-briefcase"></i> Hire Me
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="https://amar-nath-dev.github.io/portfolio/" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-globe"></i> Live Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Explore More</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
-    <section class="highlight container">
-        <blockquote>"Code is like humor. When you have to explain it, it’s bad."</blockquote>
-        <div class="skills-icons">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" title="HTML">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" title="CSS">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS" title="JavaScript">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" title="GitHub">
-        </div>
-        <p class="animated-skill">💻 Building Ideas Into Reality...</p>
-    </section>
-
+    <!-- About Section -->
     <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer and ethical hacking enthusiast, continuously learning and growing to deliver the best quality work.</p>
+        <h2 class="section-title">
+            <i class="fas fa-user-graduate"></i> About Me
+        </h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a <strong>BCA Final Year student</strong> at Rani Chennamma University with a strong passion for software development. I specialize in building responsive web applications and REST APIs using modern technologies.</p>
+                <p>My expertise includes <strong>Java, Spring Boot, JavaScript, React, MongoDB, HTML, CSS, and Git</strong>. I am seeking an entry-level <strong>Software Developer or Web Developer</strong> role where I can contribute my skills and grow professionally.</p>
+            </div>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <span class="counter" data-target="3">0</span>
+                    <span>+</span>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box">
+                    <span class="counter" data-target="2">0</span>
+                    <span>+</span>
+                    <p>Years Coding</p>
+                </div>
+                <div class="stat-box">
+                    <span class="counter" data-target="6">0</span>
+                    <span>+</span>
+                    <p>Technologies</p>
+                </div>
+            </div>
+            <div class="strengths-container">
+                <h3><i class="fas fa-star"></i> Key Strengths</h3>
+                <div class="strengths-grid">
+                    <div class="strength-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-users"></i>
+                        <span>Team Collaboration</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-rocket"></i>
+                        <span>Fast Learner</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>Adaptability</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-comments"></i>
+                        <span>Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="services" class="container">
-        <h2>Services</h2>
-        <ul>
-            <li>Web Design</li>
-            <li>Landing Page Development</li>
-            <li>Portfolio Website Creation</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2 class="section-title">
+            <i class="fas fa-code"></i> Technical Skills
+        </h2>
+        <div class="skills-container">
+            <!-- Languages -->
+            <div class="skill-category">
+                <h3><i class="fas fa-language"></i> Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-java" style="color: #ED8B00;"></i>
+                        <h4>Java</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js-square" style="color: #F7DF1E;"></i>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5" style="color: #E44D26;"></i>
+                        <h4>HTML5</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt" style="color: #264DE4;"></i>
+                        <h4>CSS3</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-bootstrap" style="color: #7952B3;"></i>
+                        <h4>Bootstrap</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react" style="color: #61DAFB;"></i>
+                        <h4>React.js</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-leaf" style="color: #6DB33F;"></i>
+                        <h4>Spring Boot</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-node-js" style="color: #83CD29;"></i>
+                        <h4>Node.js</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-plug" style="color: #00eaff;"></i>
+                        <h4>REST APIs</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database & Tools -->
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Database & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-database" style="color: #47A248;"></i>
+                        <h4>MongoDB</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt" style="color: #F05032;"></i>
+                        <h4>Git</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-github" style="color: #fff;"></i>
+                        <h4>GitHub</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code" style="color: #007ACC;"></i>
+                        <h4>VS Code</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Demo Project 1</h3>
-            <p>A simple portfolio site created with HTML, CSS, and JavaScript.</p>
-            <a href="#" class="btn">View Demo</a>
-        </div>
-        <div class="project">
-            <h3>Demo Project 2</h3>
-            <p>Landing page design for a startup company.</p>
-            <a href="#" class="btn">View Demo</a>
+        <h2 class="section-title">
+            <i class="fas fa-project-diagram"></i> Projects
+        </h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project featured">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <span class="project-badge">Featured</span>
+                </div>
+                <h3>Complaint Management System</h3>
+                <p class="project-description">
+                    A full-stack complaint management application built with Java, Spring Boot, and MongoDB. Features REST APIs, CRUD operations, and responsive UI.
+                </p>
+                <div class="project-features">
+                    <span><i class="fas fa-check-circle"></i> REST APIs Development</span>
+                    <span><i class="fas fa-check-circle"></i> CRUD Functionality</span>
+                    <span><i class="fas fa-check-circle"></i> Responsive Design</span>
+                    <span><i class="fas fa-check-circle"></i> MongoDB Integration</span>
+                </div>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>MongoDB</span>
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://github.com/amar-nath-dev" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                </div>
+                <h3>Personal Portfolio Website</h3>
+                <p class="project-description">
+                    A modern, responsive portfolio website developed with HTML, CSS, and JavaScript. Deployed on GitHub Pages with optimized performance and SEO.
+                </p>
+                <div class="project-features">
+                    <span><i class="fas fa-check-circle"></i> Responsive Design</span>
+                    <span><i class="fas fa-check-circle"></i> GitHub Pages Deployment</span>
+                    <span><i class="fas fa-check-circle"></i> Modern UI/UX</span>
+                    <span><i class="fas fa-check-circle"></i> Cross-Browser Compatible</span>
+                </div>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>GitHub Pages</span>
+                </div>
+                <a href="https://amar-nath-dev.github.io/portfolio/" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
         </div>
     </section>
 
-    <section class="testimonials container">
-        <h2>Client Testimonials</h2>
-        <div class="testimonial">
-            <p>"Great work! Very professional and fast delivery."</p>
-            <span>- Sarah (Startup Founder)</span>
-        </div>
-        <div class="testimonial">
-            <p>"My website looks amazing now, thank you Amarnath!"</p>
-            <span>- John (Entrepreneur)</span>
+    <!-- Education Section -->
+    <section id="education" class="container">
+        <h2 class="section-title">
+            <i class="fas fa-graduation-cap"></i> Education
+        </h2>
+        <div class="education-timeline">
+            <div class="education-card current">
+                <div class="edu-year">2023 - 2026</div>
+                <div class="edu-content">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p class="edu-school">Rani Chennamma University</p>
+                    <p class="edu-status">Currently Pursuing (Final Year)</p>
+                    <div class="edu-subjects">
+                        <span>Java</span>
+                        <span>Web Development</span>
+                        <span>Database</span>
+                        <span>DSA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="edu-year">2021</div>
+                <div class="edu-content">
+                    <h3>ADCA (Advanced Diploma in Computer Applications)</h3>
+                    <p class="edu-school">Computer Application Diploma</p>
+                    <p class="edu-status">Completed</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="contact container">
-        <h2>Contact Me</h2>
-        <form action="mailto:amarnath@example.com" method="POST" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <!-- Languages Section -->
+    <section class="container">
+        <h2 class="section-title">
+            <i class="fas fa-globe-asia"></i> Languages
+        </h2>
+        <div class="languages-grid">
+            <div class="language-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Hindi</h3>
+                <span class="lang-level">Fluent / Native</span>
+            </div>
+            <div class="language-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>English</h3>
+                <span class="lang-level">Intermediate</span>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact container">
+        <h2 class="section-title">
+            <i class="fas fa-paper-plane"></i> Contact Me
+        </h2>
+        <div class="contact-wrapper">
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-comment"></i>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p>amarnathpraj331@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>6387765027</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Location</strong>
+                        <p>Gorakhpur, Uttar Pradesh</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <strong>GitHub</strong>
+                        <p>github.com/amar-nath-dev</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <strong>Portfolio</strong>
+                        <p>amar-nath-dev.github.io/portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>Contact me at: <a href="mailto:amarnathpraj331@gmail.com">amarnathpraj331@gmail.com</a></p>
+        <div class="container footer-container">
+            <div class="footer-content">
+                <h3>Amarnath Prajapati</h3>
+                <p>Java Developer • Web Developer • BCA Student</p>
+                <div class="social-links">
+                    <a href="https://github.com/amar-nath-dev" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.fiverr.com/webexpert_aman" target="_blank" aria-label="Fiverr">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                    <a href="https://amar-nath-dev.github.io/portfolio/" target="_blank" aria-label="Portfolio">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <a href="mailto:amarnathpraj331@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:6387765027" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                <p class="footer-quote">"Building the future, one line of code at a time."</p>
+                <p class="copyright">&copy; 2024 Amarnath Prajapati. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
 </html>
-
